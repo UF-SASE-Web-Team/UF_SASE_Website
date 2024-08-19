@@ -1,12 +1,55 @@
-<<<<<<< HEAD
-filler
-=======
-# React + Vite
+# UF SASE Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the offical website for the University of Florida SASE (Society of Asian Scientests and Engineers) chapter.
+It is managed by the current webmaster (Ricky Zhang) and is built by our amazing Web Team!
 
-Currently, two official plugins are available:
+## Setting up the Repo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
->>>>>>> sprint-0
+1. **Install Node.js**:
+   - Download and install Node.js from [nodejs.org](https://nodejs.org/en).
+
+2. **Clone the Repository**:
+   - Clone the repository using Git:
+     ```bash
+     git clone https://github.com/ufsasewebmaster/UF_SASE_Website
+     ```
+
+3. **Check Out the Latest Sprint**:
+   - Don’t pull from `main`. Instead, pull from the most up-to-date sprint branch:
+     ```bash
+     git fetch origin
+     git checkout sprint-N   # Replace N with the largest number sprint
+     git pull origin sprint-N
+     ```
+
+4. **Install Server Dependencies**:
+   - Navigate to the server directory and install dependencies:
+     ```bash
+     cd server
+     npm install
+     ```
+
+5. **Create .env Files**:
+   - Create a `.env` file at the root of the `server` directory and populate it with the required environment variables.
+   - Repeat the process for the `client` directory.
+
+6. **Install ESLint**:
+   - Run the following command to install the required version of ESLint:
+     ```bash
+     npm i eslint@9.5.0
+     ```
+
+7. **Run the Website**:
+   - Make sure to start both the server and client:
+     ```bash
+     npm run dev
+     ```
+   - The website should open in your browser at `http://localhost:8000`.
+
+## .env Information
+
+For `.env` details, contact the current webmaster to access the necessary environment variable information.
+
+---
+
+That’s it! You should now be able to run the website locally.
